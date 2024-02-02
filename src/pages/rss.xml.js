@@ -6,6 +6,6 @@ export async function GET(context) {
 		description: 'Creando Blog con Astro',
 		site: context.site,
 		items: await pagesGlobToRssItems(import.meta.glob('./**/*.md')),
-		customData: `<language>es-es</language>`,
+		customData: `<language>en-us</language>`,
 	});
 }
